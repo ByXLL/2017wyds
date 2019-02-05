@@ -1,0 +1,180 @@
+
+
+/*toolbar 返回头部 二维码 中英切换*/
+#toolbar {
+	position: fixed;
+	right: 0px;
+	bottom: 50px;
+}
+
+.toolbar-item {
+	background: url(../images/toolbar.png) no-repeat;
+}
+
+.toolbar-item {
+	display: block;
+	width: 52px;
+	height: 52px;
+	margin-top: 1px;
+	position: relative;
+	-moz-transition: background-position 0.5s;
+	-ms-transition: background-position 0.5s;
+	-o-moz-transition: background-position 0.5s;
+	-webkit-moz-transition: background-position 0.5s;
+	transition: background-position 0.5s;
+}
+
+.toolbar-item:hover .toolbar-layer {
+	opacity: 1;
+	filter: alpha(opacity=100);
+	transform: scale(1);
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-ms-transform: scale(1);
+	-o-transform: scale(1);
+}
+
+.toolbar-item-language {
+	background-position: 0 -142px;
+}
+
+.toolbar-item-language-en {
+	background-position: 0 -4px;
+}
+.language-phone{background-position: 0 -4px;}
+.language-phone-en{background-position: 0 -142px;}
+.toolbar-item-language:hover {
+	background-position: 0 -210px;
+}
+
+.toolbar-item-language-en:hover {
+	background-position: 0 -72px;
+}
+
+.toolbar-item-phone, .toolbar-item-phone-en{
+	background-position: 0 -282px;
+}
+
+.toolbar-item-phone:hover {
+	background-position: 0 -350px;
+}
+
+.toolbar-item-phone-en:hover {
+	background-position: 0 -423px;
+}
+.toolbar-item-phone .toolbar-layer, 
+.toolbar-item-phone-en .toolbar-layer{
+	width: 150px;
+	height: 185px;
+	border: 1px solid #ccc;
+	margin: 0 6px 10px 0;
+	text-align: center;
+	background-color:rgb(255,255,255);
+}
+
+.toolbar-item-phone .toolbar-layer .toolbar-txt, 
+.toolbar-item-phone-en .toolbar-layer .toolbar-txt{
+	height: 30px;
+	line-height: 30px;
+	display: inline-block;
+	color:rgb(0,94,154);
+}
+
+.toolbar-item-phone .toolbar-layer canvas,
+.toolbar-item-phone-en .toolbar-layer canvas {
+	margin: 10px;
+}
+
+.toolbar-item-top, .toolbar-item-top-en{
+	background-position: 0 -487px;
+	opacity: 0;
+}
+
+.toolbar-item-top:hover {
+	background-position: 0 -560px;
+}
+
+.toolbar-item-top-en:hover {
+	background-position: 0 -630px;
+}
+
+.toolbar-layer {
+	position: absolute;
+	right: 46px;
+	bottom: -10px;
+	width: 172px;
+	opacity: 0;
+	filter: alpha(opacity=0);
+	transform-origin: 95% 95%;
+	-moz-transform-origin: 95% 95%;
+	-ms-transform-origin: 95% 95%;
+	-o-transform-origin: 95% 95%;
+	-webkit-transform-origin: 95% 95%;
+	transform: scale(0.01);
+	-moz-transform: scale(0.01);
+	-ms-transform: scale(0.01);
+	-o-transform: scale(0.01);
+	-webkit-transform: scale(0.01);
+	transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+}
+
+@media screen and (max-width: 992px) {
+	.toolbar-item-phone {
+		display: none;
+	}
+	.toolbar-item-phone-en {
+		display: none;
+	}
+}
+
+.powered_by_lzzy a {
+	color: #ffffff;
+}
+
+
+/* footer 波浪*/
+.marquee-box {
+	border:0;
+	overflow: hidden;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	top: 0
+}
+
+.marquee {
+	width: 8000%;
+	height: 60px
+}
+
+.wave-list-box {
+	float: left
+}
+
+.wave-list-box ul {
+	float: left;
+	height: 60px;
+	overflow: hidden;
+	zoom: 1
+}
+
+.wave-list-box ul li {
+	display:block;
+	height: 60px;
+	width: 100%;
+	float: left;
+	line-height: 30px;
+	list-style: none
+}
+
+.wave-box {
+	border:0;
+	position: relative;
+	height: 60px;
+	background: #fff;
+	width: 100%;
+}

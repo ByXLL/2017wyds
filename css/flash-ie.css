@@ -1,0 +1,39 @@
+#stage .camel {
+  width: 6.25em;
+  height: 3.125em;
+  position: absolute;
+  margin-left: 19.125em;
+  left: -4%;
+  bottom: 40px;
+  z-index: 999;
+  background: url("../img/camel-1.png") 0 0 no-repeat;
+  background-size: 50em 100%;
+  opacity: 0;
+}
+#stage .camel2{margin-left: 14.88em;}
+#stage .camel3{margin-left: 11em;}
+#stage .camel4{margin-left: 6.7em;}
+
+#stage .aurora {
+  display: none;
+}
+#stage .aurora-5 {
+  display: block;
+}
+#slidebar,
+#package {
+  opacity: 1;
+}
+#stage .aurora {
+  display: none;
+  opacity: 1;
+}
+#stage .aurora-5 {
+  display: block;
+}
+.scene-icon-1-back,
+.bear-words,
+.bear-wrapper,
+.bear {
+  display: none;
+}

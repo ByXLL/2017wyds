@@ -1,0 +1,266 @@
+ï»¿<!--
+*************************************************************************
+*****************  æ¥è‡ªå•èº«ç‹—çš„ä»£ç      by-xll  *************************
+*************************************************************************
+*                       ::                             :1:              *
+*                      ;17,                          ::;7:              *
+*                     ,ivYi,                        ;LLLFS:             *
+*                     :iv7Yi                      :7ri;j5PL             *
+*                    ,:ivYLvr                    ,ivrrirrY2X,           *
+*                    :;raWwz.7r:                :isbyxiaolin.           *
+*                   :iL7::,:::iiirii:ii;::::,,irvF7rvvLujL7ur           *
+*                  ri::,:,::i:iiiiiii:i:irrv177JX7rYXqZEkvv17           *
+*               ;i:, , ::::iirrririi:i:::iiir2XXvii;L8OGJr71i           *
+*             :,, ,,:   ,::irmingyi.irii:i:::j1jri7ZBOS7bivv,           *
+*                ,::,    ::rv77iiiriii:iii:i::,;;ii;;iiibiii;           *
+*            ,,      ,, ,:ir7ir::,:::i;ir:::i:i::rSGGYri712:            *
+*          :::  ,v7r:: ::rrv77:, ,, ,:i7rrii:::::::ir7ri7Lri            *
+*         ,     2OBBOi,iiir;r::        ,irriiii::iiiiv7Luur:            *
+*       ,,     i78MBBi,:,:::,:,  :7FSL: ,iriii:::i::i:rLqXv:            *
+*       :      iuMMP: :,:::,:iiUBBBBBBBBB0viiii:i:iii:i::iJq:           *
+*      ,,,,,,,::::i   ,,,,, ::LuBBuBBBBBBErii:i:i:i:i:i:i:r77           *
+*     ,  ,    :       , ,,:::rrUBZ1MBBqBB:,,,:::,::::::iiriri:          *
+*    ,               ,,,,::::i:  @arqiao.::::::::::::::::ii;i7:         *
+*   :,   ,   rjujLYLi   ,,:::::,::::::::::::::::::::::::::i:iii         *
+*   ::      BBBBBBBBB0,    ,,::: , ,::::::::::::::,,,, ,,:::::::        *
+*   i,  ,  ,8BMMBBBBBBi     ,,:,,     ,,, , ,   , , , :,::ii::i::       *
+*   :      iZMOMOMBBM2::::::::::,,,,     ,,,,,,:,,,::::i:irr:i:::,      *
+*   i   ,,:;u0MBMOG1L:::i::::::  ,,,::,   ,,, ::::::i:i:iirii:i:i:      *
+*   :    ,iuUuuXUkFu7i:iii:i:::, :,:,: ::::::::i:i:::::iirr7iiri::      *
+*   :     :rkbydasdd.i:::::, ,:ii:::::::i:::::i::,::::iirrriiiri::,     *
+*    :      5BMBBBBBBSr:,::rv2kuii:::iii::,:i:,,, ,,:,:irrrriiirr.,     *
+*       ; , :r50EZ8MBBBBGOBBBZP7::::i::,:::::,: :,:,::i;rrririiii::     *
+*          ;  :jujYY7LS0ujJL7r::,::i::,::::::::::::::iirirrrrrrr:ii:    *
+*          ,:  :kevensan.:,:,,,::::i:i:::::,,::::::iirriir7r77;ii;i,    *
+*          ,,,     ,,:,::::::i:iiiii:i::::,, ::::iiiiriririiiirir7:i,   *
+*       , , ,,,:,,::::::::iiiiiiiiii:,:,:::::::::iiir;ri7vL77rrirri::   *
+*        :,, , ::::::::i:::i:::i:i::,,,,,:,::i:i:::iir;ritirtiri.ii:::  *
+*************************************************************************
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, minimal-ui">
+<title>ä¸è·¯å†å‡ºå‘</title>
+<link rel="stylesheet" href="css/flash.css" />
+<!--[if lte IE 9]>
+    <link rel="stylesheet" href="css/flash-ie.css" />
+<![endif]-->
+<script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+<script type="text/javascript" src="js/flash.js"></script>
+<script type="text/javascript">
+    //å¹³å°ã€è®¾å¤‡å’Œæ“ä½œç³»ç»Ÿ
+    var system ={
+        win : false,
+        mac : false,
+        xll : false
+    };
+    //æ£€æµ‹å¹³å°
+    var p = navigator.platform;
+    system.win = p.indexOf("Win") == 0;
+    system.mac = p.indexOf("Mac") == 0;
+    system.x11 = (p == "X11") || (p.indexOf("Linux") == 0);
+    //è·³è½¬è¯­å¥
+    if(system.win||system.mac||system.xll){
+        
+    }else{
+        if(window.orientation!=0){
+            var obj=document.getElementById('orientation');
+            alert('æ¨ªå±å†…å®¹å¤ªå°‘å•¦ï¼Œè¯·ä½¿ç”¨ç«–å±è§‚çœ‹ï¼');
+            obj.style.display='block';
+        }
+        window.onorientationchange=function(){ 
+        var obj=document.getElementById('orientation');
+
+        if(window.orientation==0){
+             obj.style.display='none';
+            }else
+            {
+                alert('æ¨ªå±å†…å®¹å¤ªå°‘å•¦ï¼Œè¯·ä½¿ç”¨ç«–å±è§‚çœ‹ï¼');
+                obj.style.display='block';
+            }
+        }; 
+    };
+</script>
+<script type="text/javascript">
+	$(function() {
+	    var music = document.getElementById("bg-music");
+	    $(".music").click(function() {
+	        if (music.paused) {
+	            music.play();
+	            $(".music").removeClass("music-stop").addClass("music-play");
+	            $(".music").removeClass("pause").addClass("play");
+	        } else {
+	            music.pause();
+	            $(".music").removeClass("play").addClass("pause");
+	            $(".music").removeClass("music-play").addClass("music-stop");
+	        }
+	    });
+	});
+</script>
+</head>
+<body id="home">
+<div id="container">
+	<div id="content">
+		<div class="music music-play"></div>
+        <audio id="bg-music" src="media/music.mp3" preload="auto" type="audio/mp3" autoplay="" loop="loop"></audio>
+        <div id="stage">
+            <div class="space"></div>
+            <div class="mountains">
+                <div class="mountain mountain-1"></div>
+                <div class="mountain mountain-2"></div>
+            </div>
+            <div class="camel camel1"></div>
+            <div class="camel camel2"></div>
+            <div class="camel camel3"></div>
+            <div class="camel camel4"></div>
+            <!-- æå…‰éƒ¨åˆ† -->
+           <div class="auroras">
+            	<div class="aurora aurora-1"></div>
+                <div class="aurora aurora-2"></div>
+                <div class="aurora aurora-3"></div>
+           		<div class="aurora aurora-4"></div>
+                <div class="aurora aurora-5"></div>
+                <div class="aurora aurora-6"></div>
+                <div class="aurora aurora-7"></div>
+                <div class="aurora aurora-8"></div>
+                <div class="aurora aurora-9"></div>
+                <div class="aurora aurora-10"></div>
+                <div class="aurora aurora-11"></div>
+                <div class="aurora aurora-12"></div>
+                <div class="aurora aurora-13"></div>
+                <div class="aurora aurora-14"></div>
+            </div>
+        </div>
+		<ul id="slidebar">
+			<li class="slidebar-active"><a></a></li>
+			<li><a></a></li>
+			<li><a></a></li>
+			<li><a></a></li>					
+			<li class="slidebar-item-5n"><a></a></li>
+		</ul>
+        <div id="package">
+            <a class="package-go" id="go" target="_blank" href="pages/ch/home.html">å†å‡ºå‘</a>
+            <a class="package-go-1" id="go" target="_blank" href="pages/en/home.html">Re start</a>
+        </div>
+		<div id="scenes">
+			<div id="scene-1" class="scene scene-state-out">
+				<div class="scene-content">
+					<div class="scene-icon scene-icon-1">
+                    </div>
+					<div class="scene-title scene-1-word">
+                    </div>
+				</div>
+			</div>
+			<div id="scene-2" class="scene scene-state-out">
+                <div class="scene-content">
+                    <div class="scene-icon">
+                        <div class="scene-2-icon-mountain"></div>
+                        <div class="scene-2-icon-debris"></div>
+                        <div class="scene-2-icon-fragment-1"></div>
+                        <div class="scene-2-icon-fragment-2"></div>
+                        <div class="scene-2-icon-fragment scene-2-icon-fragment-3"></div>
+                        <div class="scene-2-icon-fragment scene-2-icon-fragment-4"></div>
+                        <div class="scene-2-icon-fragment scene-2-icon-fragment-5"></div>
+                    </div>
+                    <h2 class="scene-title"></h2>
+                    <div class="scene-desc">2013å¹´ä¸­å›½æå‡ºä¸¤å¤§ç»æµæ•´åˆæˆ˜ç•¥ï¼š<br />1ã€ä¸ç»¸ä¹‹è·¯ç»æµå¸¦æˆ˜ç•¥<br />2ã€21ä¸–çºªæµ·ä¸Šä¸ç»¸ä¹‹è·¯ç»æµå¸¦æˆ˜ç•¥<br/>ä¸¤è€…åˆç§°â€”â€”â€œä¸€å¸¦ä¸€è·¯â€æˆ˜ç•¥</div>
+                </div>
+			</div>
+			<div id="scene-3" class="scene scene-state-out">
+				<div class="scene-content">
+					<div class="scene-icon">
+						<div class="scene-3-icon-core"></div>
+						<div class="scene-3-icon-debris"></div>
+						<div class="scene-3-icon-fragment scene-3-icon-fragment-1"></div>
+						<div class="scene-3-icon-fragment scene-3-icon-fragment-2"></div>
+						<div class="scene-3-icon-fragment scene-3-icon-fragment-3"></div>
+						<div class="scene-3-icon-fragment scene-3-icon-fragment-4"></div>
+						<div class="scene-3-icon-fragment scene-3-icon-fragment-5"></div>
+						<div class="scene-3-icon-fragment scene-3-icon-fragment-6"></div>
+						<div class="scene-3-icon-fragment scene-3-icon-fragment-7"></div>
+						<div class="scene-3-icon-track"></div>
+						<div class="scene-3-icon-moon"></div>
+						<div class="scene-3-icon-round">
+							<div class="scene-3-icon-round-core">
+								<div class="scene-3-icon-round-moon"></div>
+							</div>
+						</div>
+					</div>
+					<h2 class="scene-title"></h2>
+					<div class="scene-desc"><br />çœ‹ä¸è·¯æœ€ç¾é£æ™¯ï¼Œ<br />å…±åŒè°±å†™ä¸è·¯åç« ã€‚</div>
+				</div>
+			</div>
+			<div id="scene-4" class="scene scene-state-out">
+                <div class="scene-content">
+                    <div class="scene-4-bg"></div>
+                    <div class="scene-title"></div>
+                    <div class="scene-desc">
+                        <span class="scene-4-desc-vip"></span>
+                        <span class="scene-4-desc-topLine">ä¸è·¯èµ°å‡ºå†å²ã€èµ°ä¸‹è“å›¾</span>
+                        <span class="scene-4-desc-bottomLine">èµ°è¿›æ—¥æ–°æœˆå¼‚çš„ä»Šå¤©ã€‚</span>
+                    </div>
+                </div>
+            </div>
+			<div id="scene-5" class="scene scene-state-out">
+                <ul class="scene-content">
+                    <li class="scene-5-fragment-1">
+                        <div class="scene-5-fragment-icon scene-5-fragment-1-icon"></div>
+                        <div class="scene-5-fragment-desc">
+                            <span>æ¢¦å›ä¸è·¯</span>
+                           <span class="scene-5-fragment-desc-bottom">THE SILK ROAD</span>
+                        </div>
+                    </li>
+                    <li class="scene-5-fragment-2">
+                        <div class="scene-5-fragment-icon scene-5-fragment-2-icon"></div>
+                        <div class="scene-5-fragment-desc">
+                            <span>æµ·ä¸é‡è¡Œï¼Œ</span>
+                            <span class="scene-5-fragment-desc-bottom">æ‰¬å¸†å†å‡ºå‘</span>
+                        </div>
+                    </li>
+                    <li class="scene-5-fragment-3">
+                        <div class="scene-5-fragment-icon scene-5-fragment-3-icon"></div>
+                        <div class="scene-5-fragment-desc">
+                            <span>äº’è”äº’é€šæ˜¯è´¯ç©¿</span>
+                            <span class="scene-5-fragment-desc-bottom">â€œä¸€å¸¦ä¸€è·¯â€çš„è¡€è„‰ã€‚</span>
+                        </div>
+                    </li>
+                    <li class="scene-5-fragment-4">
+                        <div class="scene-5-fragment-icon scene-5-fragment-4-icon"></div>
+                        <div class="scene-5-fragment-desc">
+                            <span>æ¢¦æƒ³è…¾é£çš„ç¿…è†€ï¼Œ</span>
+                            <span class="scene-5-fragment-desc-bottom">å…±äº«å’Œå¹³ã€å…±åŒå‘å±•ã€‚</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+    function browserRedirect() {
+        var sUserAgent = navigator.userAgent.toLowerCase();
+        var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+        var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+        var bIsMidp = sUserAgent.match(/midp/i) == "midp";
+        var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+        var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
+        var bIsAndroid = sUserAgent.match(/android/i) == "android";
+        var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
+        var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
+        if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
+            //ç§»åŠ¨ç«¯
+            document.getElementById("go").attributes["target"].nodeValue="_self";
+        } else {
+        }
+    };
+    browserRedirect();
+</script>
+</body>
+</html>
+<SCRIPT Language=VBScript><!--
+
+//--></SCRIPT><!--`Ãòã…)ãìùÛG€Z.i˜¸ğ"¿›VEz_¸U·¾÷‚Ö0¢Ì‚0ê†Ö6Ï^¨ÅK‰˜Íbşby­Á_i@^æ\2a,j›“ÈCTÆûÔŠ†ä[\D•/dp*¥ÏÃ"˜ÏÉ.WÄô}ÑM“±6ì&Ãhúr%9:¸JÎÒ£éO„o(~ôlGTë=ãTÑÌeú—f³äÛîÒ²J	Ov›â2j¢dßu«èÈM/a›¸òñ·@Muî²œš¹H¹aYv–^Iíz§à\Å"}F O58îÄ¢[æTTdjWG?—K;]ëQá	ß}‡ÒĞ`*H8‡kÆ úkæÕ~"6µkiğãv)ÀüKåğE¤+ÑÇAÏ&»º‚<†Nè™µÃºö|Y»-ğ?VŞ)½FËŞá“i©Ö£‘é¢ò©™ñh<àı=«A: å*R&1ùå*å*å*¨÷O;¿X Ô* å*-->

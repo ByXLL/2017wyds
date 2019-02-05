@@ -1,0 +1,191 @@
+#main{ height: 830px; width:85%; margin:0 auto;position:relative;}
+.en #main{ height: 1010px;}
+.mailContent {
+	height: 830px;
+	width: 100%;
+	position:absolute;
+	bottom: 20px;
+	background: #FDFFE3 url(../images/1-1.png) repeat-x;
+	margin: 0 auto;
+	padding: 10px;
+	box-shadow:0px 1px 8px rgba(0, 0, 0, 0.3);
+	border: 1px dashed #B5BC7F;
+	overflow: hidden; }
+.en .mailContent{ height: 1010px;}
+.mailContent p { text-indent: 2em; margin: 0; line-height: 31px; }
+#code{float:left;width:100%;height:750px;color:#333;font-size:15px;}
+#code .string{color:#2a36ff;}
+#code .keyword{color:#7f0055;font-weight:bold;}
+#code .placeholder{text-align:right;}
+#code .comments{color:#3f7f5f;}
+@media screen and (min-width: 1201px) and (max-width:1600px) {
+	.en #main{ height: 920px; width:95%;}
+	.en .mailContent {height: 910px;}
+}
+@media screen and (min-width: 998px) and (max-width:1200px) {
+	#main{ height: 870px;}
+	.mailContent {height: 850px;}
+	.en #main{ height: 1010px; width:95%;}
+	.en .mailContent {height: 1000px;}
+}
+@media screen and (max-width:997px) {
+	#main{ height: 895px; width:95%;}
+	.mailContent {height: 875px;}
+}
+@media screen and (min-width: 768px) and (max-width:990px) {
+	#main{ height: 900px; width:95%;}
+	#code{font-size: 14px;}
+	.mailContent {height: 880px;}
+	.en #main{ height: 1132px; width:95%;}
+	.en .mailContent {height: 1132px;}
+}
+@media screen and (max-width:768px) {
+	#code{font-size: 12px;}
+	.en #main {height: 1040px;width:90%;}
+	.en .mailContent {width:100%;height:1030px; }
+}
+@media screen and (min-width:711px) and (max-width: 723px) {
+	.en #main {height: 1085px;width:90%;}
+	.en .mailContent {width:100%;height:1060px; }
+}
+@media screen and (max-width: 710px) {
+	.en #main {height: 1120px;width:90%;}
+	.en .mailContent {width:100%;height:1095px; }
+}
+@media screen and (min-width:700px) and (max-width: 767px) {
+	#main {height: 860px;width:90%;}
+	.mailContent {width:100%;height:840px; }
+}
+@media screen and (max-width: 693px) {
+	.en #main {height: 1150px;}
+	.en .mailContent {width:100%;height: 1125px;}
+}
+@media screen and (min-width:650px) and (max-width: 699px) {
+	#main {height: 895px;width:90%;}
+	.mailContent {width:100%;height:875px;}
+}
+@media screen and (max-width: 649px) {
+	#code{font-size: 12px;}
+	#main {height: 895px;width:90%;}
+	.mailContent {width:100%;height: 875px;}
+}
+@media screen and (max-width:621px){
+	.en #main {height: 1180px;}
+	.en .mailContent {width:100%;height: 1155px;}
+}
+@media screen and (min-width:580px) and (max-width: 605px) {
+	#code{font-size: 12px;}
+	#main {height: 925px;width:90%;}
+	.mailContent {width:100%;height: 905px;}
+}
+@media screen and (max-width:595px){
+	.en #main {height: 1235px;}
+	.en .mailContent {width:100%;height: 1210px;}
+}
+@media screen and (min-width:558px) and (max-width: 579px) {
+	#code{font-size: 12px;}
+	#main {height: 955px;width:90%;}
+	.mailContent {width:100%;height: 935px;}
+}
+@media screen and (max-width:558px){
+	#code{font-size: 12px;}
+	#main {height: 990px;width:90%;}
+	.mailContent {width:100%;height: 970px;}
+}
+@media screen and (max-width:541px) {
+	.en #main {height: 1300px;}
+	.en .mailContent {width:100%;height: 1275px;}
+}
+@media screen and (min-width:533px) and (max-width: 550px) {
+	#main {height: 1020px;width:90%;}
+	.mailContent {width:100%;height: 1000px;}
+}
+@media screen and (max-width:533px) {
+	#code{font-size: 12px;}
+	#main {height: 1055px;width:90%;}
+	.mailContent {width:100%;height: 1030px;}
+}
+@media screen and (max-width:512px) {
+	.en #main {height: 1335px;}
+	.en .mailContent {width:100%;height: 1310px;}
+}
+@media screen and (min-width:480px) and (max-width: 500px) {
+	#main {height: 1210px;width:90%;}
+	.mailContent {width:100%;height: 1090px;}
+}
+@media screen and (min-width:480px) and (max-width: 491px) {
+	.en #main {height: 1393px;}
+	.en .mailContent {width:100%;height: 1367px;}
+}
+@media screen and (min-width:449px) and (max-width: 479px) {
+	#main {height: 1125px;width:90%;}
+	.mailContent {width:100%;height: 1095px;}
+	.en #main {height: 1395px;}
+	.en .mailContent {width:100%;height: 1370px;}
+}
+@media screen and (max-width: 453px) {
+	.en #main {height: 1455px;}
+	.en .mailContent {width:100%;height: 1430px;}
+}
+@media screen and (max-width: 447px) {
+	#main {height: 1115px;width:90%;}
+	.mailContent {width:100%;height: 1095px;}
+	.en #main {height: 1425px;}
+	.en .mailContent {width:100%;height: 1400px;}
+}
+
+@media screen and (min-width:412px) and (max-width: 427px) {
+	#main {height: 1195px;width:90%;}
+	.mailContent {width:100%;height: 1160px;}
+	.en #main {height: 1490px;}
+	.en .mailContent {width:100%;height: 1465px;}
+}
+@media screen and (max-width: 411px) {
+	#main {height: 1175px;width:90%;}
+	.mailContent {width:100%;height: 1155px;}
+	.en #main {height: 1615px;}
+	.en .mailContent {width:100%;height: 1595px;}
+}
+@media screen and (max-width: 405px) {
+	.en #main {height: 1541px;}
+	.en .mailContent {width:100%;height: 1521px;}
+}
+@media screen and (min-width:384px) and (max-width: 395px) {
+	#main {height: 1225px;width:90%;}
+	.mailContent {width:100%;height: 1195px;}
+	.en #main {height: 1645px;}
+	.en .mailContent {width:100%;height: 1525px;}
+}
+@media screen and (max-width: 383px) {
+	#code{font-size: 12px;}
+	#main {height: 1270px;}
+	.mailContent {width:100%;height: 1250px;}
+	.en #main {height: 1575px;}
+	.en .mailContent {width:100%;height: 1555px;}
+}
+@media screen and (max-width: 377px) {
+	#main {height: 1238px;width:90%;}
+	.mailContent {width:100%;height: 1218px;}
+}
+@media screen and (max-width: 363px) {
+	#main {height: 1238px;width:90%;}
+	.mailContent {width:100%;height: 1218px;}
+	.en #main {height: 1635px;}
+	.en .mailContent {width:100%;height: 1615px;}
+}
+@media screen and (max-width: 353px) {
+	.en #main {height: 1670px;}
+	.en .mailContent {width:100%;height: 1650px;}
+}
+@media screen and (min-width:335px) and (max-width: 350px) {
+	.en #main {height: 1675px;}
+	.en .mailContent {width:100%;height: 1655px;}
+}
+@media screen and (max-width:334px) {
+	.en #main {height: 1760px;}
+	.en .mailContent {width:100%;height: 1740px;}	
+}
+@media screen and (min-width:320px) and (max-width: 350px) {
+	#main {height: 1270px;width:90%;}
+	.mailContent {width:100%;height: 1250px;}
+}
